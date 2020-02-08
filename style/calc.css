@@ -1,0 +1,158 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	font-family: 'Montserrat', sans-serif;
+}
+.header__nav {
+	background-color: #4c4c4c;
+}
+.header__nav-list {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	list-style: none;
+}
+.header__nav-listitem {
+	display: inline-block;
+}
+.header__nav-list-link{
+	display: block;
+	text-decoration: none;
+	color: white;
+	padding: 20px;
+	font-size: 2rem;
+	font-family: 'Montserrat', sans-serif;
+}
+.header__nav-list-link:hover {
+	background-color: white;
+	color: black;
+}
+
+h1 {
+	margin: 25px 10px 0 10px;
+	text-align: center;
+}
+.paragraf {
+	margin-top: 25px;
+	padding: 0 25px;
+}
+.paragraf p {
+	margin-bottom: 15px;
+}
+.container {
+	display: flex;
+	justify-content: center;
+	margin-top: 25px;
+	background-color: #4c4c4c;
+}
+.flex {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding: 10px 0;
+}
+
+.input {
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+}
+input {
+	border-radius: 5px;
+	border: 1px solid black;
+	margin-bottom: 15px;
+}
+#btn {
+	margin: 5px 0 0 0;
+	background-color: lightgray;
+}
+#btn:hover {
+	background-color: white;
+}
+.time {
+	display: flex;
+}
+.time input {
+	width: 100%;
+	height: 30px;
+	text-align: center;
+	font-size: 18px;
+}
+.value {
+	display: flex;
+	flex-direction: column;
+}
+.value input {
+	height: 30px;
+	text-align: center;
+	font-size: 18px;
+}
+label {
+    color: white;
+	font-size: 15px;
+	padding-left: 3px;
+}
+.label {
+	color: white;
+	font-size: 15px;
+	padding-left: 3px;
+}
+.output {
+	display: none;
+	padding: 10px;
+	flex-direction: column;
+}
+.error {
+	background-color: red;
+	color: white;
+	padding: 5px;
+	border-radius: 5px;
+}
+.ok {
+	color: white; 
+	padding: 5px;
+	width: 100%;
+}
+.containerie {
+	display: none;
+	justify-content: center;
+	margin-top: 25px;
+	background-color: #4c4c4c;
+}
+#btnIE {
+	margin: 5px 0 0 0;
+	background-color: lightgray;
+}
+#btnIE:hover {
+	background-color: white;
+}
+
+@media (max-width: 786px) {
+	.header__nav-list-link {
+		font-size: 1.5rem;
+		padding: 10px;
+	}	
+	.header__nav-list {
+		flex-direction: column;
+		align-items: center;
+	}
+	.flex {
+		flex-direction: column;
+		align-items: center;
+	}
+}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+   /* стили только для IE10 IE11 */
+.container {
+	display: none;
+} 
+.containerie {
+	display: flex;
+}
+}
