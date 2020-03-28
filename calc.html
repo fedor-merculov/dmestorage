@@ -7,24 +7,9 @@
 	<meta name="robots" content="index,follow" />
 	<meta name="keywords" content="камера, хранения, аэропорт, домодедово, стоимость, багаж, стоит" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-	<link rel="stylesheet" href="calc.css">
+	<link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="./style/calc.css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700,900&display=swap" rel="stylesheet">
-	<script src="scriptIE.js" defer></script>
-	<script src="script.js" defer></script>
-	<!-- Yandex.Metrika counter -->
-<script type="text/javascript" >
-   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-
-   ym(55019167, "init", {
-        clickmap:true,
-        trackLinks:true,
-        accurateTrackBounce:true
-   });
-</script>
-<!-- /Yandex.Metrika counter -->
 </head>
 <body>
 	<div class="header__nav">
@@ -32,7 +17,6 @@
 			<li class="header__nav-listitem"><a href="index.html" class="header__nav-list-link">Главная</a></li>
 			<li class="header__nav-listitem"><a href="calc.html" class="header__nav-list-link">Калькулятор</a></li>
 			<li class="header__nav-listitem"><a href="price.html" class="header__nav-list-link">Тарифы</a></li>
-			<!-- <li class="header__nav-listitem"><a href="" class="header__nav-list-link">Товары</a></li> -->
 			<li class="header__nav-listitem"><a href="contacts.html" class="header__nav-list-link">Контакты</a></li>
 		</ul>
 	</div>
@@ -67,46 +51,9 @@
 					</div>
 				</div>
 				<div class="output">
-					
 				</div>
 			</div>
 		</form>
 	</div>
-	<div class="containerie">
-		<form name="time">
-			<div class="flex">
-				<div class="input">
-					<p class="label">Выберите дату и время сдачи багажа</p>
-					<div class="time">
-						<input type="text" id="firstDateIE" placeholder="ДД.ММ.ГГГГ">
-						<input type="text" id="firstTimeIE" placeholder="ЧЧ:ММ">
-					</div>
-					<p class="label">Выберите дату и время получения багажа</p>   
-					<div class="time">
-						<input type="text" id="secondDateIE" placeholder="ДД.ММ.ГГГГ">
-						<input type="text" id="secondTimeIE" placeholder="ЧЧ:ММ">
-					</div>
-					<div class="value">
-						<label for="baggageIE">Выберите количество мест багажа</label>
-						<input type="number" id="baggageIE" step="1" placeholder="0">
-						<label for="clothesIE">Выберите количество кофров одежды</label>
-						<input type="number" id="clothesIE" step="1" placeholder="0">
-						<input type="button" value="ПОСЧИТАТЬ" id="btnIE">
-						<label for="resultBaggage">Стоимость хранения багажа</label>
-						<input type="text" id="resultBaggage">
-						<label for="resultClothes">Стоимость хранения одежды</label>
-						<input type="text" id="resultClothes">
-						<label for="resultTotal">Итоговая стоимость хранения</label>
-						<input type="text" id="resultTotal">
-						<label for="resultDays">Количество календарных дней</label>
-						<input type="text" id="resultDays">
-					</div>
-				</div>
-				<div class="output">
-					
-				</div>
-			</div>
-		</form>
-	</div>
-<noscript><div><img src="https://mc.yandex.ru/watch/55019167" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+	<script src="./script/script.js" defer></script>
 </body>
